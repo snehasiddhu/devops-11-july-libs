@@ -1,0 +1,4 @@
+def get_tag(){
+    def tag = sh returnStdout: true, script: 'git rev-parse --short HEAD'
+    return tag
+}
